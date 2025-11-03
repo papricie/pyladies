@@ -1,3 +1,3 @@
 
-print("Ahoj", jmeno)
+# print("Ahoj", jmeno)
 
