@@ -4,8 +4,8 @@
 # a uživatele vyzvi k zadání jejich součinu. Ověř, 
 # jestli uživatel odpověděl správně.
 from random import randrange
-cislo1 = randrange(10)
-cislo2 = randrange(10)
+cislo1 = randrange(1, 11)
+cislo2 = randrange(1, 11)
 spravna_odpoved = cislo1 * cislo2
 print(cislo1, '*', cislo2, '= ?')
 zadana_odpoved = int(input('Zadej svůj výsledek: '))
