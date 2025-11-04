@@ -1,3 +1,7 @@
+
+# Příkaz if slouží k podmíněnému provedení části kódu.
+# Pokud je splněna zadaná podmínka, provede se blok kódu za if.
+# Pokud není podmínka splněna, blok kódu se přeskočí.
 strana = float(input('Zadej stranu čtverce v centimetrech: '))
 cislo_je_spravne = strana > 0
 
@@ -9,6 +13,14 @@ else:
 
 print('Děkujeme za použití geometrické kalkulačky.')
 
+
+# Jednoduchý příkaz if bez větve else:
+cislo = int(input('Zadej číslo, přičtu k němu 3: '))
+if cislo == 0:
+    print('Jé, to je jednoduché!')
+print(cislo, '+ 3 =', cislo + 3)
+
+# Příkaz if může mít i více větví – pomocí elif (zkratka pro "else if"). Následující program nabízí nápoje podle věku zákazníka:
 vek = int(input('Kolik ti je let? '))
 if vek >= 150:
     print('A ze kterépak jsi planety?')
@@ -23,8 +35,8 @@ else:
     # Nenastala ani nedna ze situací výše – muselo to být záporné
     print('Pro návštěvy z budoucnosti bohužel nemáme nic v nabídce.')
 
-
-    stastna = input('Jsi šťastná?')
+# Vnořené příkazy if – tedy if uvnitř jiného if – se hodí, když je potřeba rozhodnout na základě více podmínek:
+stastna = input('Jsi šťastná?')
 bohata = input('Jsi bohatá?')
 
 if stastna == 'ano':

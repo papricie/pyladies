@@ -1,18 +1,15 @@
-# Program, který vypisuje hlášky dle zadaných vstupních hodnot
-mnozstvi_kavy = float(input("Zadej počet šálků kávy: "))
-if mnozstvi_kavy < 0:
-    print("Počet šálků kávy nemůže být záporný.")
-    exit()
-elif mnozstvi_kavy == 0:
-    print("Žádný šálek kávy? To je smutné.")
-elif 1 <= mnozstvi_kavy <= 3:
-    print("Malý kávový nadšenec!")
-elif 4 <= mnozstvi_kavy <= 8:
-    print("Kávový milovník!")   
-elif mnozstvi_kavy > 8:
-    print("Tryskomyš!")
+# Program, který podle počtu vypitých šálků kávy za den vypíše odpovídající komentář.
+mnozstvi_kavy = int(input("Zadej počet šálků kávy: "))
 
+if mnozstvi_kavy == 0:
+    print("Žádný šálek kávy? To je smutné.")
+elif mnozstvi_kavy >= 5:
+    print("Tryskomyš!")
+elif mnozstvi_kavy >= 3:
+    print("Kávový milovník!")
+elif mnozstvi_kavy >= 1:
+    print("Bezva, káva je super!")
 else:
-    print("Neplatný vstup.")
+    print("Počet šálků kávy nemůže být záporný.")
 
 

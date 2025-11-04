@@ -6,7 +6,6 @@ zadane_cislo = float(input("Uhodni číslo od 1 do 10 a dozvíš se tajemství: 
 # kontrola, zda je číslo v povoleném rozsahu
 if zadane_cislo < 1 or zadane_cislo > 10:
     print("Číslo musí být opravdu v rozmezí od 1 do 10.")
-    exit()
 elif zadane_cislo == tajne_cislo:
     print("Správně, tajemství je, že mi nejde vymyslet tajemství.")
 else:
