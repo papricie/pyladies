@@ -13,8 +13,10 @@ cislo = randrange(3)
 #print(cislo)
 
 if cislo == 0:
-    print("trojuhelnik")
+    tvar = "trojuhelnik"
 elif cislo == 1:
-    print("ctverec")
+    tvar = "ctverec"
 else:
-    print("kolecko")
+    tvar = "kolecko"
+
+print(tvar)

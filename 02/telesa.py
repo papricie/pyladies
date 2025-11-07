@@ -30,7 +30,7 @@ else:
     exit()
 
 # Zadani velikosti   
-velikost = int(input("Delka strany (krychle, kvadr) nebo prumeru (koule) v cm? "))
+velikost = float(input("Delka strany (krychle, kvadr) nebo prumeru (koule) v cm? "))
 if velikost <= 0:
     print("Cislo musi byt kladne.")
     exit()
@@ -52,11 +52,11 @@ elif teleso == "koule":
         print("Povrch koule je", povrch ,"cm2")
 # kvadr - zadani dalsich stran
 elif teleso == "kvadr":
-    strana_b = int(input("Zadej druhou stranu: "))
+    strana_b = float(input("Zadej druhou stranu: "))
     if strana_b <= 0:
         print("Cislo musi byt kladne.")
         exit()
-    strana_c = int(input("Zadej treti stranu: "))
+    strana_c = float(input("Zadej treti stranu: "))
     if strana_c <= 0:
         print("Cislo musi byt kladne.")
         exit()
