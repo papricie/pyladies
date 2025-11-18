@@ -9,6 +9,8 @@ elif operace == "-":
 elif operace == "*":
     vysledek = prvni * druhe
 elif operace == "/":
+    if druhe == 0:
+        raise ValueError("Nelze dělit nulou")
     vysledek = prvni / druhe
 else:
     print("Neplatná operace.")
