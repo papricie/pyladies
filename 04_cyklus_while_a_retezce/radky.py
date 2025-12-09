@@ -6,4 +6,4 @@
 # Řádek 4
 
 for radek in range(5):
-    print("Řádek " + str(radek + 0))
+    print(f"Řádek {radek}")
