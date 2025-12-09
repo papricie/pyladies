@@ -4,12 +4,10 @@
 #X X
 #X X X
 #X X X X
-#Počet řádků zadá uživatel.
-
 #„Z jednotlivých 'X'“ opět znamená, že každý print vypíše maximálně jedno 'X'.
 
-pocet_radku = int(input("Zadej počet řádků: ")) 
-for i in range(1, pocet_radku + 1): 
+
+for i in range(1, 5): 
     for j in range(i):  
         print("X", end=" ") 
-    print()
+    print() 
