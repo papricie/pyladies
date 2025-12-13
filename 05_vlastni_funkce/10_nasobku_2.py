@@ -1,5 +1,12 @@
-def vrat_nasobky(cislo1, cislo2, cislo3):
-    """Funkce vrátí prvních deset násobků zadaných čísel."""
-    return [(cislo1 * i, cislo2 * i, cislo3 * i) for i in range(1, 11)]
+# Změn proceduru z předchozího úkolu tak, 
+# aby funkce měla tři argumenty – číslo, počet vypisovaných násobků, 
+# znak pro oddělení vypsaných násobků.
 
-print(vrat_nasobky(5, 10, -3))
+def vypis_nasobky(cislo, pocet_nasobku, oddelovac):
+    """Funkce vypíše zadaný počet násobků zadaného čísla a oddělí je."""
+    nasobky = []
+    for i in range(1, pocet_nasobku + 1): # +1 protože range je do, ale ne včetně
+        nasobky.append(cislo * i)
+    print(nasobky)
+
+vypis_nasobky(2, 5, ", ")
