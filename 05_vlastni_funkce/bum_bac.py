@@ -14,6 +14,12 @@
 # Bác
 # Bum
 
+###
+# Tady není nutné používat seznam. Zadání je 
+# Pak napiš funkci, která bude mít jako parametr 
+# jedno číslo (n) a vypíše n řádek. Na prvním 
+# řádku bude "Bum", na druhém "Bác", na třetím "Bum", atd.
+
 
 def vrat_bum_nebo_bac (cislo):
     """Funkce vrátí 'Bum', pokud je číslo liché, 'Bac', pokud je sudé."""
@@ -24,14 +30,10 @@ def vrat_bum_nebo_bac (cislo):
 #print(vrat_bum_nebo_bac(3))
 #print(vrat_bum_nebo_bac(4))
 
-def vrat_bum_bac_cyklem(cislo):
-    vysledek = []
+def vypis_bum_bac_cyklem(cislo):
+    """Funkce vypíše n řádků s Bum a Bac."""
     for i in range(1, cislo + 1):
-        if i % 2 == 0:
-            vysledek.append("Bac")
-        else:
-            vysledek.append("Bum")
-    return vysledek
+        print(vrat_bum_nebo_bac(i))
 
-for radek in vrat_bum_bac_cyklem(7):
-    print(radek) 
+vypis_bum_bac_cyklem(5)
+
