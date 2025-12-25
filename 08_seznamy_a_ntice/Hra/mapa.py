@@ -30,6 +30,6 @@ def nakresli_mapu(seznam_souradnic):
         mapa += "\n" # přechod na nový řádek po dokončení řádku
     return mapa 
 
-print(nakresli_mapu([(0, 0), (0, 1), (2, 2), (3, 4), (9, 8)]))
+# print(nakresli_mapu([(0, 0), (0, 1), (2, 2), (3, 4), (9, 8)]))
 # prvni cislo je sloupec, druhe rade, prvni X je tedy (0, 0)
 # posledni X v mape je (9, 9) na konci 10. radku a 10. sloupce
