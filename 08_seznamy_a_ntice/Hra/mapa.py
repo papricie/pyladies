@@ -14,21 +14,29 @@
 # takových dvojic seznam_souradnic.
 
 
-def nakresli_mapu(seznam_souradnic):
+def nakresli_mapu(seznam_souradnic, jidlo): # přidán parametr jidlo
     """
-    Vytvoří mapu 10x10 jako řetězec, kde na pozicích
-    uvedených v seznamu_souradnic jsou 'X' a '.'
+    Vytvoří mapu 10x10 jako řetězec, kde na poziích
+    uvedených v seznamu_souradnic jsou:
+    'X' je had 
+    '.' je prázdné pole
+    '?' je jídlo
     """
     mapa = ""
-    for radek in range(10): # vnější cyklus pro řádky
-        for sloupec in range(10): # vnitřní cyklus pro sloupce
+    for radek in range(20): # vnější cyklus pro řádky
+        for sloupec in range(20): # vnitřní cyklus pro sloupce
             radek_a_sloupec = (sloupec, radek) # vytvoření dvojice (sloupec, radek)
-            if radek_a_sloupec in seznam_souradnic: # kontrola, zda je dvojice v seznamu
+            if radek_a_sloupec in seznam_souradnic: # kontrola, zda je dvojice v seznamu souřadnic
                 mapa += "X " # přidání 'X' na danou pozici
-            else: 
+            elif radek_a_sloupec in jidlo: # kontrola, zda je dvojice v seznamu jídla
+                mapa += "? " # přidání '?' na danou pozici
+            else:
                 mapa += ". " # přidání '.' na danou pozici
-        mapa += "\n" # přechod na nový řádek po dokončení řádku
-    return mapa 
+
+        mapa += "\n" # přechod na nový řádek po dokončení jednoho řádku
+
+    return mapa
+
 
 # print(nakresli_mapu([(0, 0), (0, 1), (2, 2), (3, 4), (9, 8)]))
 # prvni cislo je sloupec, druhe rade, prvni X je tedy (0, 0)
