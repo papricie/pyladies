@@ -1,22 +1,7 @@
 # Napiš funkci, která dostane seznam souřadnic 
 # (párů čísel menších než 10, která určují sloupec a řádek), 
 # a vypíše je jako mapu: mřížku 10×10, kde na políčka, 
-# která jsou v seznamu napíše X, jinde tečku. Například:
-
-# nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9), (8, 9)])
-
-# X . . . . . . . . .
-# X . . . . . . . . .
-# . . X . . . . . . .
-# . . . . . . . . . .
-# . . . X . . . . . .
-# . . . . . . . . . .
-# . . . . . . . . . .
-# . . . . . . . . . .
-# . . . . . . . . . X 
-# . . . . . . . . . .
-
-# Jak na to?
+# která jsou v seznamu napíše X, jinde tečku.
 
 # Vzpomeň si, jak se vypisuje tabulka: 
 # pomocí dvou cyklů for zanořených do sebe.
@@ -29,20 +14,6 @@
 # takových dvojic seznam_souradnic.
 
 
-
-# def nakresli_mapu(seznam_souradnic):
-    # for radek in range(10): # vnější cyklus pro řádky
-        # for sloupec in range(10): # vnitřní cyklus pro sloupce
-            # radek_a_sloupec = (sloupec, radek)
-            # if radek_a_sloupec in seznam_souradnic:
-            #     print("X", end=" ")
-            # else:
-            #     print(".", end=" ")
-        # print()
-
-# nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9), (8, 9)])
-
-# napis to funkci s return, ne jako program:
 def nakresli_mapu(seznam_souradnic):
     """
     Vytvoří mapu 10x10 jako řetězec, kde na pozicích
@@ -59,6 +30,6 @@ def nakresli_mapu(seznam_souradnic):
         mapa += "\n" # přechod na nový řádek po dokončení řádku
     return mapa 
 
-print(nakresli_mapu([(0, 0), (1, 0), (2, 2), (4, 3), (8, 9), (8, 9)]))
-# prvni cislo je radek, druhe sloupec
-
+print(nakresli_mapu([(0, 0), (0, 1), (2, 2), (3, 4), (9, 8)]))
+# prvni cislo je sloupec, druhe rade, prvni X je tedy (0, 0)
+# posledni X v mape je (9, 9) na konci 10. radku a 10. sloupce
