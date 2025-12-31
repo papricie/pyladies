@@ -27,7 +27,8 @@ print()
 
 with open('basnicka.txt', encoding='utf-8') as soubor:
     for radek in soubor:
-        radek = radek.rstrip() # odstraní koncové mezery a znaky nového řádku \n, které jsou ve čteném řádku
+        radek = radek.rstrip() # odstraní koncové mezery a znaky nového řádku \n, 
+        # které jsou ve čteném řádku
         print('    ' + radek)
 
 print()

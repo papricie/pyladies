@@ -6,7 +6,7 @@ print(obsah) # vypsání obsahu souboru
 
 
 # Lepší způsob - s využitím příkazu with, která se postará o zavření souboru
-with open('basnicka.txt', encoding='utf-8') as soubor: # otevření souboru s automatickým zavřením
-    obsah = soubor.read() # přečtení celého obsahu souboru do proměnné
+# with open('basnicka.txt', encoding='utf-8') as soubor: # otevření souboru s automatickým zavřením
+    # obsah = soubor.read() # přečtení celého obsahu souboru do proměnné
 
-print(obsah) # vypsání obsahu souboru
+# print(obsah) # vypsání obsahu souboru
